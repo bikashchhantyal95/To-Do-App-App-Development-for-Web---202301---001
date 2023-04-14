@@ -1,17 +1,38 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
 }
 
 @{
     List<Todo> todos = ViewBag.Todos;
     
-    <h3>Not Completed todo list</h3>
+    <h3>Todo List</h3>
+    
     foreach (Todo item in todos)
     {
         <div>
-            <div>Title :@item.Description</div>
-            <div>Completed :@item.Completed</div>
-            <br />
+          
+            <div>Description: @item.Description</div>
+            <div>
+                @if (@item.Completed)
+                {
+                    <span style="background: #0c4128" class="badge badge-success">Completed Date: @item.CompletionDate</span>
+                }
+                else
+                {
+                    <span style="background:#971d1b" class="badge badge-danger">Not Completed</span>
+                    <form asp-action="MarkTodo" asp-route-id="@item.Id" method="post">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <input type="checkbox" name="todoCompleted" value="true" onclick="this.form.submit();" />
+                        Mark Complete
+                    </form>
+                   
+                }
+            </div>
+            <br/>
+            
         </div>
+        
+        
     }
 }

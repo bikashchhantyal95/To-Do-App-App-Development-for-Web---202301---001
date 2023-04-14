@@ -8,41 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Todo_App_WEB_1001
 build_property.RootNamespace = Todo_App_WEB_1001
-build_property.ProjectDir = /Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/
+build_property.ProjectDir = /Users/bikash95/Desktop/WEB Assignment/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001
+build_property.MSBuildProjectDirectory = /Users/bikash95/Desktop/WEB Assignment
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Views/Home/Create.cshtml]
+[/Users/bikash95/Desktop/WEB Assignment/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Views/Home/Index.cshtml]
+[/Users/bikash95/Desktop/WEB Assignment/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Views/Home/Privacy.cshtml]
+[/Users/bikash95/Desktop/WEB Assignment/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Views/Shared/Error.cshtml]
+[/Users/bikash95/Desktop/WEB Assignment/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/bikash95/Desktop/WEB Assignment/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Views/_ViewImports.cshtml]
+[/Users/bikash95/Desktop/WEB Assignment/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Views/_ViewStart.cshtml]
+[/Users/bikash95/Desktop/WEB Assignment/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Views/Shared/_Layout.cshtml]
+[/Users/bikash95/Desktop/WEB Assignment/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-83jhm69lsr

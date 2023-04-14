@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Todo-App-WEB-1001.csproj": {}
+    "/Users/bikash95/Desktop/WEB Assignment/Todo-App-WEB-1001.csproj": {}
   },
   "projects": {
-    "/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Todo-App-WEB-1001.csproj": {
+    "/Users/bikash95/Desktop/WEB Assignment/Todo-App-WEB-1001.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Todo-App-WEB-1001.csproj",
+        "projectUniqueName": "/Users/bikash95/Desktop/WEB Assignment/Todo-App-WEB-1001.csproj",
         "projectName": "Todo-App-WEB-1001",
-        "projectPath": "/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/Todo-App-WEB-1001.csproj",
+        "projectPath": "/Users/bikash95/Desktop/WEB Assignment/Todo-App-WEB-1001.csproj",
         "packagesPath": "/Users/bikash95/.nuget/packages/",
-        "outputPath": "/Users/bikash95/.NetAssignments/RiderProjects/Todo-App-WEB-1001/obj/",
+        "outputPath": "/Users/bikash95/Desktop/WEB Assignment/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bikash95/.nuget/NuGet/NuGet.Config"

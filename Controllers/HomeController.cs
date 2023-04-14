@@ -20,7 +20,8 @@ public class HomeController : Controller
     {
         // get data from todo table.
         // filter table to get todo whose completed value is false
-        List<Todo> todos = _todoContext.Todos.Where(todo => todo.Completed == false).ToList();
+        // List<Todo> todos = _todoContext.Todos.Where(todo => todo.Completed == false).ToList();
+        List<Todo> todos = _todoContext.Todos.ToList();
         // Send todos list to view
         ViewBag.Todos = todos;
         return View();
@@ -40,7 +41,7 @@ public class HomeController : Controller
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,Description,Completed,CompltedDate")] Todo todo)
+    public async Task<IActionResult> Create([Bind("Id,Description,Completed,CompletionDate")] Todo todo)
     {
         if (ModelState.IsValid)
         {
@@ -57,4 +58,21 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    [HttpPost]
+    public async void MarkTodo(int? id)
+    {
+        var todo = await _todoContext.Todos.FindAsync(id);
+        if (todo == null)
+        {
+            return;
+        }
+
+        todo.Completed = true;
+        todo.CompletionDate = DateTime.Now;
+        _todoContext.Update(todo);
+        await _todoContext.SaveChangesAsync();
+    }
+
+ 
 }
