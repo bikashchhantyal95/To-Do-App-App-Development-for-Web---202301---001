@@ -1,26 +1,46 @@
-﻿@{
+﻿@model Todo
+@{
     ViewData["Title"] = "Home Page";
     Layout = "_Layout";
 }
 
+
+<h4>Create</h4>
+    <hr />
+    @* form to add todo *@
+<form asp-action="Create" class="row g-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="col-auto">
+        <label asp-for="Description" class="control-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span></div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary mb-3" />
+    </div>
+</form>
+
 @{
     List<Todo> todos = ViewBag.Todos;
     
+ 
+    
     <h3>Todo List</h3>
     
-    foreach (Todo item in todos)
+    foreach (Todo item in todos) //loop through todos
     {
         <div>
           
             <div>Description: @item.Description</div>
             <div>
-                @if (@item.Completed)
+                @if (@item.Completed) //if todo is completed
                 {
-                    <span style="background: #0c4128" class="badge badge-success">Completed Date: @item.CompletionDate</span>
+                    // show completion date
+                    <span class="badge bg-success">Completed Date: @item.CompletionDate</span>
                 }
                 else
                 {
-                    <span style="background:#971d1b" class="badge badge-danger">Not Completed</span>
+                    
+                    <span class="badge bg-danger">Not Completed</span>
                     <form asp-action="MarkTodo" asp-route-id="@item.Id" method="post">
                         <input type="hidden" name="id" value="@item.Id" />
                         <input type="checkbox" name="todoCompleted" value="true" onclick="this.form.submit();" />
@@ -35,4 +55,9 @@
         
         
     }
+}
+
+@section Scripts
+{
+    @Html.RenderPartialAsync("_ValidationScriptsPartial")
 }
