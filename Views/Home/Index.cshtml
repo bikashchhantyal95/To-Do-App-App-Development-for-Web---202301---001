@@ -7,7 +7,7 @@
 
 <h4>Create</h4>
     <hr />
-    @* form to add todo *@
+    
 <form asp-action="Create" class="row g-3">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="col-auto">
@@ -32,9 +32,9 @@
           
             <div>Description: @item.Description</div>
             <div>
-                @if (@item.Completed) //if todo is completed
+                @if (@item.Completed) 
                 {
-                    // show completion date
+                    
                     <span class="badge bg-success">Completed Date: @item.CompletionDate</span>
                 }
                 else
